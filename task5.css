@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.header {
+  background: #5fc0cd;
+  height: 44px;
+  color: white;
+  font-size: 18px;
+  line-height: 44px;
+  text-align: center;
+  position: relative;
+}
+
+.header img {
+  left: 0;
+  position: absolute;
+  width: 11px;
+  height: 18px;
+  padding-top: 13px;
+  margin-left: 25px;
+}
+
+.banner {
+  display: flex;
+  background: url(./img/backimg.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.user {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.user img {
+  padding-left: 25px;
+  width: 84px;
+  height: 84px;
+}
+
+.name {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  padding-left: 25px;
+}
+
+.age {
+  font-size: 14px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.banner .name p {
+  color: white;
+  font-size: 12px;
+  position: relative;
+  left: 20px;
+}
+
+.banner .name p::before {
+  content: "";
+  background-image: url(./img/location.png);
+  background-size: 10px 12px;
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  left: -20px;
+  top: 3px;
+}
+
+.content div {
+  height: 50px;
+  border: 1px solid #eff0f4;
+
+}
+
+.content span {
+  color: #999999;
+  padding-left: 25px;
+  text-align: center;
+  line-height: 44px;
+}
+
+.type {
+  font-size: 16px;
+  line-height: 44px;
+}
+
+.type img {
+  width: 16px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+.kill {
+  font-size: 16px;
+  line-height: 50px;
+}
+
+.kill span::before{
+    content: "";
+    background-color: #5fc0cd;
+    width: 3px;
+    height: 13px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin-top: 34px;
+
+}
+
+.footer button {
+  width: 48%;
+  height: 44px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+button[name=message] {
+  background: white;
+  border: 1px solid #5fc0cd;
+  color: #5fc0cd;
+}
+
+button[name=tel] {
+  background: #5fc0cd;
+  color: white;
+}
